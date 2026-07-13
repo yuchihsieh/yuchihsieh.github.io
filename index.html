@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yu-Chi Hsieh</title>
+  <meta name="description" content="Yu-Chi Hsieh — PhD student at Kellogg School of Management, Northwestern University.">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #4e2a84; /* Northwestern purple */
+      --rule: #e2e2e2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      line-height: 1.65;
+      background: #fff;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    header {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .photo {
+      width: 170px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: 2rem;
+      font-weight: normal;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.3rem;
+      margin: 2.5rem 0 1rem;
+    }
+    a { color: var(--accent); }
+    a:hover { text-decoration: none; }
+    ul.papers { padding-left: 1.2rem; }
+    ul.papers li { margin-bottom: 1rem; }
+    .paper-title { font-style: italic; }
+    .paper-note { color: var(--muted); font-size: 0.95rem; }
+    .links { margin-top: 1rem; }
+    .links a { margin-right: 1.25rem; }
+    footer {
+      margin-top: 3.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    @media (max-width: 560px) {
+      header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- TODO: 把你的 LinkedIn 照片存成 photo.jpg 放進 repo 根目錄 -->
+      <img class="photo" src="photo.jpg" alt="Yu-Chi Hsieh"
+           onerror="this.outerHTML='<div class=&quot;photo&quot; style=&quot;background:#eee;display:flex;align-items:center;justify-content:center;color:#999;font-size:0.8rem;&quot;>photo.jpg</div>'">
+      <div>
+        <h1>Yu-Chi Hsieh</h1>
+        <p class="subtitle">PhD Student, Kellogg School of Management<br>Northwestern University</p>
+        <p>
+          I am a second-year PhD student at the Kellogg School of Management,
+          Northwestern University.
+          <!-- TODO: 一兩句研究興趣，例如 My research interests include ... -->
+        </p>
+        <div class="links">
+          <a href="mailto:yuchi.hsieh@kellogg.northwestern.edu">Email</a>
+          <!-- TODO: 換成你的真實連結，沒有的就整行刪掉 -->
+          <a href="https://www.linkedin.com/in/TODO">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=TODO">Google Scholar</a>
+          <a href="cv.pdf">CV</a>
+        </div>
+      </div>
+    </header>
+
+    <h2>Publications</h2>
+    <ul class="papers">
+      <li>
+        <!-- TODO: 換成你們已發表的 paper -->
+        <span class="paper-title">[Title of the published paper]</span><br>
+        <span class="paper-note">with [Coauthors]. <em>[Journal]</em>, [Year].
+        [<a href="https://TODO">paper</a>]</span>
+      </li>
+    </ul>
+
+    <h2>Working Papers</h2>
+    <ul class="papers">
+      <!-- TODO: 放兩三篇 working paper 的標題（照 advisor 說的，標題就夠了） -->
+      <li><span class="paper-title">[Working paper title 1]</span><br>
+        <span class="paper-note">with [Coauthors].</span></li>
+      <li><span class="paper-title">[Working paper title 2]</span><br>
+        <span class="paper-note">with [Coauthors].</span></li>
+      <li><span class="paper-title">[Working paper title 3]</span></li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>
+      yuchi.hsieh [at] kellogg.northwestern.edu<br>
+      Kellogg School of Management, Northwestern University<br>
+      2211 Campus Drive, Evanston, IL 60208
+    </p>
+
+    <footer>Last updated: July 2026</footer>
+  </div>
+</body>
+</html>
